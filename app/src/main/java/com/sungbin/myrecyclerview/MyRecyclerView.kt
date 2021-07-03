@@ -1,10 +1,10 @@
-package com.example.myrecyclerview
+package com.sungbin.myrecyclerview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.myrecyclerview.databinding.ItemLayoutBinding
+import com.sungbin.myrecyclerview.databinding.ItemLayoutBinding
 
 class MyRecyclerAdapter : RecyclerView.Adapter<MyRecyclerAdapter.ViewHolder>() {
     private var modelList = ArrayList<MyModel>()

@@ -1,4 +1,4 @@
-package com.example.myrecyclerview
+package com.sungbin.myrecyclerview
 
 import android.util.Log
 
