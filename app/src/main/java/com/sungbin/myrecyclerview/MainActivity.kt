@@ -3,6 +3,7 @@ package com.sungbin.myrecyclerview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.sungbin.myrecyclerview.data.MyModel
 import com.sungbin.myrecyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         for(i in 1..10){
-            var myModel = MyModel(name = "성빈 $i", profileImage = "https://img.icons8.com/ios/452/kotlin.png")
+            var myModel = MyModel(name = "성빈 $i", profileImage = "https://img.icons8.com/ios/452/kotlin.png", "Kotlin")
             this.modelList.add(myModel)
         }
 

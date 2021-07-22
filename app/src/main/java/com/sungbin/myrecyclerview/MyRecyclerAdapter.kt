@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.sungbin.myrecyclerview.data.MyModel
 import com.sungbin.myrecyclerview.databinding.ItemLayoutBinding
 
 class MyRecyclerAdapter : RecyclerView.Adapter<MyRecyclerAdapter.ViewHolder>() {
@@ -31,10 +32,7 @@ class MyRecyclerAdapter : RecyclerView.Adapter<MyRecyclerAdapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
         fun setUp(myModel: MyModel){
-            binding.userNameText.text = myModel.name
-            Glide.with(binding.root.context)
-                .load(myModel.profileImage)
-                .into(binding.profileImg)
+            binding.data = myModel
         }
     }
 }
